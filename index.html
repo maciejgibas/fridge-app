@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Co z lodówki?</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <h1>Co z lodówki?</h1>
+  <nav id="nav">
+    <button data-tab="fridge" class="on">Lodówka?</button>
+    <button data-tab="recipes">Przepisy</button>
+    <button data-tab="scan">Skan paragonu</button>
+    <button data-tab="settings">Ustawienia</button>
+  </nav>
+</header>
+<div id="banner"></div>
+<main id="view"></main>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<!-- OCR (Tesseract.js) z CDN – nic nie trzeba instalować -->
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js"></script>
+<!-- Kolejność ma znaczenie: od podstaw do widoków -->
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="data/product-catalog.js"></script>
+<script src="data/receipt-dict.js"></script>
+<script src="data/seed-recipes.js"></script>
+<script src="js/db.js"></script>
+<script src="js/store.js"></script>
+<script src="js/expiry.js"></script>
+<script src="js/diet-rules.js"></script>
+<script src="js/matcher.js"></script>
+<script src="js/recipes-api.js"></script>
+<script src="js/notifications.js"></script>
+<script src="js/ocr.js"></script>
+<script src="js/receipt-parser.js"></script>
+<script src="js/ui/onboarding.js"></script>
+<script src="js/ui/fridge.js"></script>
+<script src="js/ui/scan.js"></script>
+<script src="js/ui/recipes.js"></script>
+<script src="js/ui/settings.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
